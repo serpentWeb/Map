@@ -1,0 +1,66 @@
+#map > svg {
+  cursor: pointer;
+  position: relative;
+}
+
+#map > svg > {
+  fill: none;
+  transition: fill 0.3s ease;
+}
+
+#map > svg > :hover{
+  fill: #FAD664;
+  transition: fill 0.3s ease;
+}
+
+.person{
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 10px 11px 15px;
+  gap: 10px;
+  min-width: 200px;
+  max-height: 62px;
+  background: #fff;
+  justify-content: space-around;
+  box-shadow: 0px 1px 9px 2px rgba(0, 0, 0, 0.04);
+  margin-top: 1px;
+}
+.person:hover{
+  background: #F4F4F4;
+  transition: background 0.3s ease;
+}
+
+.person:hover .person-arrow svg path{
+  stroke: #000!important;
+}
+
+.person>.person-name>.name{
+  background: #FAD664;
+  padding: 4px 8px;
+}
+
+.person .person-img img{
+  max-width: 48px;
+}
+
+#muenster{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.city-circle{
+  width: 10px;
+  height: 10px;
+  background: #FAD664;
+  border: black 5px solid;
+  border-radius: 100px;
+}
+
+#mun{
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  left: 60px;
+  top: 150px;
+}
